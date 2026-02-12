@@ -1,0 +1,120 @@
+from flask import Flask
+Flask
+runtime:python39
+automatic_scaling:
+  min_instan
+~                                                                                                                                                            
+~                                                                                                                                                            
+~                                                                                                                                                     
+runtime: python39
+emini CLI.
+Your Cloud Platform project in this session is set to bustling-tree-485808-h0.
+Use `gcloud config set project [PROJECT_ID]` to change to a different project.
+seetharama_23cs177@cloudshell:~ (bustling-tree-485808-h0)$ mkdir my_app
+seetharama_23cs177@cloudshell:~ (bustling-tree-485808-h0)$ cd my_app
+seetharama_23cs177@cloudshell:~/my_app (bustling-tree-485808-h0)$ vi main.py
+seetharama_23cs177@cloudshell:~/my_app (bustling-tree-485808-h0)$ vi requirements.txt
+seetharama_23cs177@cloudshell:~/my_app (bustling-tree-485808-h0)$ vi app.yaml
+seetharama_23cs177@cloudshell:~/my_app (bustling-tree-485808-h0)$ gcloud auth login
+
+You are already authenticated with gcloud when running
+inside the Cloud Shell and so do not need to run this
+command. Do you wish to proceed anyway?
+
+Do you want to continue (Y/n)?  y
+
+Go to the following link in your browser, and complete the sign-in prompts:
+
+    https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=32555940559.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fsdk.cloud.google.com%2Fauthcode.html&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fsqlservice.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&state=N21w6MXbNeXa0V3HtFTW9f7TgM1YLy&prompt=consent&token_usage=remote&access_type=offline&code_challenge=Sa8JNkXKyQ3j9RTl8OM8pgTo3WRAmNJ5hHd6hkmVjG0&code_challenge_method=S256
+
+Once finished, enter the verification code provided in your browser: 4/0ASc3gC3-jYUPwTbGwjaJGUhSTJWIssTaAfKISD1lvZVHA6evYXrGAFVsyHzXvvwQ886JFw
+
+You are now logged in as [seetharama.23cs177@sode-edu.in].
+Your current project is [bustling-tree-485808-h0].  You can change this setting by running:
+  $ gcloud config set project PROJECT_ID
+seetharama_23cs177@cloudshell:~/my_app (bustling-tree-485808-h0)$ gcloud init
+Welcome! This command will take you through the configuration of gcloud.
+
+Settings from your current configuration [cloudshell-20111] are:
+accessibility:
+  screen_reader: 'True'
+component_manager:
+  disable_update_check: 'True'
+compute:
+  gce_metadata_read_timeout_sec: '30'
+core:
+  account: seetharama.23cs177@sode-edu.in
+  disable_usage_reporting: 'False'
+  project: bustling-tree-485808-h0
+  universe_domain: googleapis.com
+metrics:
+  environment: devshell
+
+Pick configuration to use:
+ [1] Re-initialize this configuration [cloudshell-20111] with new settings 
+ [2] Create a new configuration
+Please enter your numeric choice:  1
+
+Your current configuration has been set to: [cloudshell-20111]
+
+You can skip diagnostics next time by using the following flag:
+  gcloud init --skip-diagnostics
+
+Network diagnostic detects and fixes local network connection issues.
+Checking network connection...done.                                                        
+Reachability Check passed.
+Network diagnostic passed (1/1 checks passed).
+
+Choose the account you want to use for this configuration.
+To use a federated user account, exit this command and sign in to the gcloud CLI with your 
+login configuration file, then run this command again.
+
+Select an account:
+ [1] seetharama.23cs177@sode-edu.in
+ [2] Sign in with a new Google Account
+ [3] Skip this step
+Please enter your numeric choice:  3
+
+The Google Cloud CLI is configured and ready to use!
+
+* Commands that require authentication will use seetharama.23cs177@sode-edu.in by default
+Run `gcloud help config` to learn how to change individual settings
+
+This gcloud configuration is called [cloudshell-20111]. You can create additional configurations if you work with multiple accounts and/or projects.
+Run `gcloud topic configurations` to learn more.
+
+Some things to try next:
+
+* Run `gcloud --help` to see the Cloud Platform services you can interact with. And run `gcl
+from flask import Flask
+oud help COMMAND` to get help on any gcloud command.
+* Run `gcloud topic --help` to learn about advanced features of the CLI like arg files and output formatting
+* Run `gcloud cheat-sheet` to see a roster of go-to `gcloud` commands.
+seetharama_23cs177@cloudshell:~/my_app$ python3 main.py
+  File "/home/seetharama_23cs177/my_app/main.py", line 6
+    if __name__ ='__main__':
+       ^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
+seetharama_23cs177@cloudshell:~/my_app$ vi main.py                                          
+from flask import Flask
+Some things to try next:
+
+* Run `gcloud --help` to see the Cloud Platform services you can interact with. And run `gcloud help COMMAND` to get help on any gcloud command.
+* Run `gcloud topic --help` to learn about advanced features of the CLI like arg files and output formatting
+* Run `gcloud cheat-sheet` to see a roster of go-to `gcloud` commands.
+seetharama_23cs177@cloudshell:~/my_app$ python3 main.py
+  File "/home/seetharama_23cs177/my_app/main.py", line 6
+    if __name__ ='__main__':
+       ^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
+seetharama_23cs177@cloudshell:~/my_app$ vi main.py                                          
+seetharama_23cs177@cloudshell:~/my_app$ python3 main.py                                     
+ * Serving Flask app 'main'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [12/Feb/2026 09:08:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [12/Feb/2026 09:08:47] "GET /favicon.ico HTTP/1.1" 404 -
+^Cseetharama_23cs177@cloudshell:~/my_app$ vi main.py                                        
+seetharama_23cs177@cloudshell:~/my_app$   
